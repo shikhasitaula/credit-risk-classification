@@ -26,22 +26,18 @@ In the analysis We have gone through different stages like:
 
 ### Machine Learning Model 1
 
-- Balanced Accuracy Score: 0.952 (Original Data) / 0.994 (Resampled Data)
-- Precision (High-Risk Loans): 0.85 (Original Data) / 0.84 (Resampled Data)
-- Recall (High-Risk Loans): 0.91 (Original Data) / 0.99 (Resampled Data)
+- Balanced Accuracy Score: 0.952 (Original Data) -> For the original data, the balanced accuracy score is 0.952, indicating that the model, on average, correctly predicts 95.2% of the samples from both classes.
+- Precision (High-Risk Loans): 0.85 (Original Data) -> For the original data, the precision for high-risk loans is 0.85, meaning that when the model predicts a loan as high-risk, it is correct 85% of the time.
+- Recall (High-Risk Loans): 0.91 (Original Data) ->  For the original data, the recall for high-risk loans is 0.91, meaning that the model correctly identifies 91% of all actual high-risk loans.
 
 ### Machine Learning Model 2
 
-- Balanced Accuracy Score: 0.952 (Original Data) / 0.994 (Resampled Data)
-- Precision (High-Risk Loans): 0.85 (Original Data) / 0.84 (Resampled Data)
-- Recall (High-Risk Loans): 0.91 (Original Data) / 0.99 (Resampled Data)
+- Balanced Accuracy Score:  0.994 (Resampled Data) -> For the resampled data, the balanced accuracy score is 0.994, indicating that the model, on average, correctly predicts 99.4% of the samples from both classes. 
+- Precision (High-Risk Loans): 0.84 (Resampled Data) -> For the resampled data, the precision for high-risk loans is 0.84, indicating that when the model predicts a loan as high-risk, it is correct 84% of the time.
+- Recall (High-Risk Loans):  0.99 (Resampled Data) -> For the resampled data, the recall for high-risk loans is 0.99, indicating that the model correctly identifies 99% of all actual high-risk loans.
+
+This suggests that the model trained on resampled data is better at capturing high-risk loans.
 
 ## Summary
 
-Both models performed well, with the resampled data consistently outperforming the original data. We recommend using the resampled logistic regression model, especially for identifying high-risk loans.
-
-- **Performance Dependence**: The choice of model may depend on specific goals. The resampled model is better for high-risk loan prediction, while both models work well for balanced predictions.
-
-- **No Model Rejection**: Both models are valid options, and the choice should align with your institution's objectives.
-
-In summary, the resampled logistic regression model is our preferred choice for predicting loan risk due to its strong performance, especially in identifying high-risk loans. However, both models provide valuable insights.
+Both models performed well, with the resampled data consistently outperforming the original data. We recommend using the resampled logistic regression model, especially for identifying high-risk loans. In summary, the resampled logistic regression model is our preferred choice for predicting loan risk due to its strong performance, especially in identifying high-risk loans. However, both models provide valuable insights.
